@@ -2,10 +2,10 @@ import React from 'react';
 
 export const Search = () => {
   return (
-    <div className="form-group">
+    <div className="form-group mb-4">
       <input
         type="text"
-        className="form-control"
+        className="form-control "
         placeholder="enter gitHub nickname"
       />
     </div>
