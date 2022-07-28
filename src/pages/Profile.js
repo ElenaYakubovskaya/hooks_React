@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Loader from '../components/Loader';
 import { GithubContext } from '../context/github/githubContext';
 import { Link } from 'react-router-dom';
+import { Repos } from '../components/Repos';
 
 export const Profile = () => {
   const { getUser, getRepos, loading, user, repos } = useContext(GithubContext);
@@ -89,7 +90,7 @@ export const Profile = () => {
           </div>
         </div>
       </div>
-      {repos.join()}
+      <Repos repos={repos} />
     </>
   );
 };
